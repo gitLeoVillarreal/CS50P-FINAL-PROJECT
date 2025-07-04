@@ -152,16 +152,14 @@ def compareCitiesWithDifferentCharacters(capture, city):
     else:
         return False
 
-#adds a city to the file Favourites    
+   
 def addCity(Favourites):
     try:
         with open(Favourites, 'a') as file:
             while True:
                 capture = input("Insert a city (for specified city please use ',' ex: 'city', 'state') or ? to exit: ").title()
-            #The program exits when the user type '?'
                 if capture == '?':
                     return False
-            #if the user type an unspecified city the program will display the cities with that name
                 elif not ', ' in capture:
                     response = requests.get(f"http://api.openweathermap.org/geo/1.0/direct?q={capture}&limit=5&appid={API_key}")
                     data = response.json()
@@ -182,7 +180,6 @@ def addCity(Favourites):
                         raise ValueError
                     selected = validCities[op]
                     cityAdded = selected.get('name') + ", " +selected.get('state')
-            #if the type a specified city the program will check if that city is valid
                 elif ', ' in capture:
                     city, state = capture.split(", ")
                     if ' ' in city:
@@ -244,7 +241,6 @@ def savedCities(Favourites):
     except FileNotFoundError:
             print("////You haven't saved any cities yet")
 
-#delete as many cities as the user wants
 def deleteCities(Favourites):
     with open(Favourites) as file:
         cities = file.readlines()
