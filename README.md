@@ -19,3 +19,6 @@ The project is a console weather app using the OpenWeatherMap API, so the weathe
 - `requests`
 - `unicodedata`
 - `pytest`
+
+## 🌐 How to use
+For this app you need the weather api from https://openweathermap.org/api, when you get it change the value from the API_KEY.
