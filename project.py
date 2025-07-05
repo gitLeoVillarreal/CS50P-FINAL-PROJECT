@@ -1,7 +1,7 @@
 import requests  
 import unicodedata
 from datetime import datetime, timedelta, timezone
-API_key = "7863a84bb283f47d0dc415733fe5946e"  
+API_key = "YourAPIKey"  
 
 def getLocalTime(apiTime):
     try:
