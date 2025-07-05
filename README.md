@@ -30,4 +30,4 @@ The project is a console weather app using the OpenWeatherMap API, so the weathe
 ## 🌐 How to use
 For this app you need the weather api from https://openweathermap.org/api, when you get it change the value from the API_KEY.
 #
-This was my final project for CS50 Python. While building this app a I improved my skill with APIs, working with files and user interaction in the terminal.
+This was my final project for CS50 Python. While building this app I improved my skill with APIs, working with files and user interaction in the terminal.
